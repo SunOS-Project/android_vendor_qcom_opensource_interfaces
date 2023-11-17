@@ -6,6 +6,13 @@ aidl_interface {
     ],
     stability: "vintf",
     backend: {
+        ndk: {
+            apex_available: [
+                "//apex_available:platform",
+                "com.android.btservices",
+            ],
+            min_sdk_version: "31",
+        },
         cpp: {
             enabled: false,
         },
@@ -20,5 +27,4 @@ aidl_interface {
             imports: [],
         },
     ],
-
 }
