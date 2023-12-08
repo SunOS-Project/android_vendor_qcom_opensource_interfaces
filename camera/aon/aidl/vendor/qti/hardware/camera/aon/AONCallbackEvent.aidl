@@ -1,6 +1,6 @@
 /*
- * {Copyright (c) 2023 Qualcomm Innovation Center, Inc.
- * All rights reserved. SPDX-License-Identifier: BSD-3-Clause-Clear}
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear 
  */
 
 package vendor.qti.hardware.camera.aon;
@@ -9,6 +9,7 @@ import vendor.qti.hardware.camera.aon.AONServiceType;
 import vendor.qti.hardware.camera.aon.FDEvtInfo;
 import vendor.qti.hardware.camera.aon.FDProEvtInfo;
 import vendor.qti.hardware.camera.aon.QREvtInfo;
+import vendor.qti.hardware.camera.aon.HDEvtInfo;
 
 /**
  * The event callback from AON service to client
@@ -37,4 +38,10 @@ parcelable AONCallbackEvent {
      * Only applicable when srvType is QRCode.
      */
     QREvtInfo qrEvtInfo;
+
+    /**
+     * The event information for HandDetect.
+     * Only applicable when srvType is HandDetect.
+     */
+    @nullable HDEvtInfo hdEvtInfo;
 }
