@@ -1,6 +1,6 @@
 /*
- * {Copyright (c) 2023 Qualcomm Innovation Center, Inc.
- * All rights reserved. SPDX-License-Identifier: BSD-3-Clause-Clear}
+ * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package vendor.qti.hardware.camera.aon;
@@ -22,6 +22,11 @@ enum AONServiceType {
      * QR Code Detect
      */
     QRCode = 2,
+
+    /**
+     * Hand Detect
+     */
+    HandDetect = 3,
 
     /**
      * Vendor defined events start
